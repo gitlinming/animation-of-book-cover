@@ -222,7 +222,7 @@ body,
 									width: 120%;
 									padding-top: 120%;
 									border-radius: 50%;
-									border: 2px solid $borderColor;
+									border: 2px dashed transparent;
 									.smallCircle{
 										position: absolute;
 										top: 12%;
@@ -238,7 +238,7 @@ body,
 											width: 100%;
 											height: 100%;
 											border-radius: 50%;
-											border: 2px solid $borderColor;
+											border: 2px solid transparent;
 											animation: circle 10s infinite linear;
 											will-change: transform;
 											transform-origin: 33.8%;
@@ -274,7 +274,7 @@ body,
 													text-align: center;
 													& > div{
 														position: absolute;
-														background-color: $borderColor;
+														background-color: transparent;
 														will-change: transform;
 														span{
 															font-size: .7vw;//
@@ -494,6 +494,25 @@ body,
 															display: none;
 														}
 													}
+												}
+											}
+										}
+									}
+								}
+								.book1border{
+									border: 2px solid $borderColor;
+									@include transition($property: border,$duration: 2s,$delay: .6s);
+									.smallCircle{
+										& > div{
+											border: 2px solid $borderColor;
+											@include transition($property: border,$duration: 4s,$delay: 2s);
+											& > div{
+												& > div{
+													& > div{
+														background-color: $borderColor;
+														@include transition($property: background-color,$duration: 4s,$delay: 2s);
+													}
+
 												}
 											}
 										}

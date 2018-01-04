@@ -36,9 +36,17 @@ var app = new Vue({
 		// 'foot': foot
 	},
 	data: {
+		book1borderAction: false,
 	},
 	created: function(){
 
+	},
+	mounted: function () {
+		var c = this;
+		// this.book1borderAction = true;
+		window.setTimeout(function(){
+			c.book1borderAction = true;
+		},500);
 	},
 	methods: {
 
