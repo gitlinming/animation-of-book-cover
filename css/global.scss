@@ -1,0 +1,523 @@
+@import 'initializ.scss';
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+body{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	font-family: sans-serif, "pingfang SC", "Hiragino Sans GB", "Microsoft YaHei", tahoma, arial, simsun;
+}
+
+html,
+body,
+#wrap{
+	width: 100%;
+	height: 100%;
+	background-color: #222;
+}
+
+#wrap{
+	// .rightWrap{
+	// 	display: none;
+	// }
+	& > div{
+		float: left;
+		display: inline-block;
+		width: 50%;
+		height: 100%;
+		box-sizing: border-box;
+		& > div{
+			display: table;
+			width: 100%;
+			height: 100%;
+			& > div{
+				display: table-cell;
+				vertical-align: middle;
+				& > ul{
+					position: relative;
+					margin-left: 10%;
+					width: 80%;
+					padding-top: 112.432433%;
+					box-shadow: 0 0 60px #444 inset;
+					& > li{
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						& > div{
+							position: relative;
+							top: 10%;
+							margin: 0 10%;
+							width: 80%;
+							height: 80%;
+							background-color: #fff;
+						}
+						.book1{
+							position: relative;
+							background-color: #D9D2C0;
+							border-radius: 1% 5% 5% 1%;
+							overflow: hidden;
+							.shawdowLine{
+								position: absolute;
+								top: 1%;
+								left: 6%;
+								width: 2px;
+								height: 98%;
+								background-color: #ece8df;
+								box-shadow: 0 0 2px #D9D2C0 inset;
+								opacity: .3;
+							}
+							.block1{
+								z-index: 1;
+								position: absolute;
+								top: 0;
+								right: 0;
+								width: 50%;
+								padding-top: 30%;
+								padding-right: 12%;
+								text-align: right;
+								& > h1{
+									font-size: 2.75vw;//
+									color: #222;
+								}
+								.heading1{
+									font-family:'cyjianbiaosongf60dc3db310cb';
+								}
+								& > div{
+									position: relative;
+									.heading2{
+										padding: 2px 0;
+										margin-right: -5%;
+										font-size: 3.5vw;//
+										font-style: italic;
+										color: #222;
+										font-weight: 600;
+										font-family: Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+										@include scale($x: 0.9,$y: 1);
+									}
+									& > div{
+										position: absolute;
+										top: 17%;
+										right: 0;
+										width: 2px;
+										height: 66%;
+										@include rotate($deg: 15deg);
+										& > div{
+											position: absolute;
+											bottom: -2px;
+											left: 0;
+											width: 100%;
+											height: 30%;
+											background-color: #D9D2C0;
+											&:first-child{
+												top: 2px;
+											}
+										}
+									}
+									.asd1{
+										right: 4%;
+									}
+									.asd2{
+										right: 16.5%;
+									}
+								}
+								& > h5{
+									font-size: 0.75vw;//
+									font-weight: 500;
+									font-family: 'Times New Roman';
+									letter-spacing: 1px;
+									color: #555;
+								}
+								& > p{
+									position: relative;
+									left: 15%;
+									margin-top: 5%;
+									font-size: .5vw;//
+									color: #333;
+									font-weight: "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+									@include scale($x: .7, $y: .7);
+								}
+							}
+							.block2{
+								z-index: 1;
+								position: absolute;
+								top: 6%;
+								left: 0;
+								padding-left: 8%;
+								& > h6,
+								& > p{
+									display: inline-block;
+									vertical-align: top;
+								}
+								& > h6{
+									width: 20%;
+									font-size: 1.4vw;//
+									font-family:'jdxilishujianf640d47de10cb';
+									color: #444;
+								}
+								& > p{
+									position: relative;
+									left: -1%;
+									margin-top: -33%;
+									padding: 5% 8% 1% 0;
+									font-size: 1vw;//
+									line-height: 90%;
+									font-weight: 400;
+									color: #ccc;
+									background-color: #444;
+									border-radius: 12%  20% 10% 20%;
+									@include scale($x: .35,$y: .35);
+								}
+							}
+							.block3{
+								z-index: 1;
+								position: absolute;
+								bottom: 7%;
+								right: 0;
+								width: 50%;
+								padding-right: 12%;
+								text-align: right;
+								& > h6,
+								& > div{
+									display: inline-block;
+									vertical-align: top;
+								}
+								& > h6{
+									position: relative;
+									top: 20%;
+									left: 10%;
+									font-size: .8vw;//
+									letter-spacing: 1.2px;
+									color: #444;
+									@include scale($x: .8,$y: .75);
+								}
+								& > div{
+									position: relative;
+									left: 13%;
+									width: 10%;
+									@include translate($y: -5%);
+									& > svg{
+										width: 100%;
+										height: 20%;
+									}
+								}
+							}
+							.block4{
+								z-index: 0;
+								position: relative;
+								width: 100%;
+								height: 100%;
+								// background-color: #ccc;
+								$borderColor: #888;
+								.largeCircle{
+									$move: 3%;
+									position: absolute;
+									right: -2%;
+									top: -14%;
+									width: 120%;
+									padding-top: 120%;
+									border-radius: 50%;
+									border: 2px solid $borderColor;
+									.smallCircle{
+										position: absolute;
+										top: 12%;
+										right: 0;
+										width: 76%;
+										padding-top: 76%;
+										border-radius: 50%;
+										& > div{
+											position: absolute;
+											top: 0;
+											right: -2px;
+											box-sizing: border-box;
+											width: 100%;
+											height: 100%;
+											border-radius: 50%;
+											border: 2px solid $borderColor;
+											animation: circle 10s infinite linear;
+											will-change: transform;
+											transform-origin: 33.8%;
+											@keyframes circle {
+												0% {
+													transform: rotate(0deg);
+												}
+												100% {
+													transform: rotate(360deg);
+												}
+											}
+											& > div{
+												// display: table;
+												width: 100%;
+												height: 100%;
+												// animation: circle2 5s infinite linear;
+												will-change: transform;
+												transform-origin: 50%;
+												@keyframes circle2 {
+													0% {
+														transform: rotate(0deg);
+													}
+													100% {
+														transform: rotate(-360deg);
+													}
+												}
+												& > div{
+													position: relative;
+													// display: table-cell;
+													// vertical-align: middle;
+													width: 100%;
+													height: 100%;
+													text-align: center;
+													& > div{
+														position: absolute;
+														background-color: $borderColor;
+														will-change: transform;
+														span{
+															font-size: .7vw;//
+															font-weight: 900;
+															color: $borderColor;
+															font-family: 'Times New Roman';
+														}
+													}
+													.gb{
+														top: 0;
+														left: 50%;
+														margin-left: -1px;
+														height: 50%;
+														width: 2px;
+														@include rotate($deg: 330deg);
+														transform-origin: 50% 100%;
+														animation: gb 5s infinite linear;
+														will-change: transform;
+														@keyframes gb {
+															0% {
+																transform: rotate(330deg);
+															}
+															100% {
+																transform: rotate(-30deg);
+															}
+														}
+														.gg{
+															display: block;
+															position: relative;
+															top: -12%;
+															@include rotate($deg: 30deg);
+															transform-origin: 0;
+															animation: gg 10s infinite linear;
+															will-change: transform;
+															@keyframes gg {
+																0% {
+																	transform: rotate(30deg);
+																}
+																100% {
+																	transform: rotate(390deg);
+																}
+															}
+														}
+														.b{
+															display: block;
+															position: relative;
+															top: 87%;
+															left: 1000%;
+															@include rotate($deg: 30deg);
+															transform-origin: 0;
+															animation: b 10s infinite linear;
+															will-change: transform;
+															@keyframes b {
+																0% {
+																	transform: rotate(30deg);
+																}
+																100% {
+																	transform: rotate(390deg);
+																}
+															}
+														}
+													}
+													.dg,
+													.dl{
+														left: 25%;
+														top: 50%;
+														margin-top: -1px;
+														width: 200%;
+														height: 2px;
+													}
+													.dl{
+														@include rotate($deg: 60deg);
+														transform-origin: 0;
+														// animation: dl 10s infinite linear;
+														will-change: transform;
+														@keyframes dl {
+															0% {
+																transform: rotate(60deg);
+															}
+															100% {
+																transform: rotate(-300deg);
+															}
+														}
+														.d{
+															position: absolute;
+															top: 0;
+															left: -2.4%;
+															transform-origin: 0;
+															transform: rotate(-60deg);
+															animation: d 10s infinite linear;
+															will-change: transform;
+															@keyframes d {
+																0% {
+																	transform: rotate(-60deg);
+																}
+																100% {
+																	transform: rotate(-420deg);
+																}
+															}
+														}
+														.l{
+															position: absolute;
+															top: 1000%;
+															left: 36%;
+															transform-origin: 0;
+															transform: rotate(-60deg);
+															animation: l 10s infinite linear;
+															will-change: transform;
+															@keyframes l {
+																0% {
+																	transform: rotate(-60deg);
+																}
+																100% {
+																	transform: rotate(-420deg);
+																}
+															}
+														}
+														.ab{
+															display: none;
+															width: 12.5%;
+															height: 100%;
+															background-color: $borderColor;
+															// background-color: #000;
+															@include rotate($deg: 60deg);
+															transform-origin: 100%;
+															// animation: dl 10s infinite linear;
+															will-change: transform;
+														}
+													}
+													.dg{
+														margin-left: -1px;
+														// animation: dg 10s infinite linear;
+														will-change: transform;
+														transform-origin: 0;
+														@keyframes dg {
+															0% {
+																transform: rotate(0deg);
+															}
+															100% {
+																transform: rotate(-360deg);
+															}
+														}
+														.h{
+															position: absolute;
+															top: -500%;
+															left: -15%;
+															transform-origin: 0;
+															transform: rotate(0deg);
+															animation: h 10s infinite linear;
+															will-change: transform;
+															@keyframes h {
+																0% {
+																	transform: rotate(0deg);
+																}
+																100% {
+																	transform: rotate(-360deg);
+																}
+															}
+														}
+														.g{
+															position: absolute;
+															top: -1500%;
+															left: 39.5%;
+															transform-origin: 0;
+															transform: rotate(0deg);
+															animation: g 10s infinite linear;
+															will-change: transform;
+															@keyframes g {
+																0% {
+																	transform: rotate(0deg);
+																}
+																100% {
+																	transform: rotate(-360deg);
+																}
+															}
+														}
+														.d{
+															display: none;
+														}
+													}
+													.ab{
+														// display: none;
+														left: 25%;
+														top: 50%;
+														margin-top: -1px;
+														width: 25%;
+														height: 2px;
+														@include rotate($deg: -60deg);
+														transform-origin: 100%;
+														// animation: ab 10s infinite linear;
+														will-change: transform;
+														@keyframes ab {
+															0% {
+																transform: rotate(-60deg);
+															}
+															100% {
+																transform: rotate(-420deg);
+															}
+														}
+														.a{
+															position: absolute;
+															top: -500%;
+															left: -20%;
+															transform: rotate(60deg);
+															animation: a 10s infinite linear;
+															will-change: transform;
+															@keyframes a {
+																0% {
+																	transform: rotate(60deg);
+																}
+																100% {
+																	transform: rotate(-300deg);
+																}
+															}
+														}
+														.b{
+															display: none;
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
