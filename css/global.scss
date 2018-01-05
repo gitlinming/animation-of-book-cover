@@ -501,7 +501,7 @@ body,
 								}
 								.book1border{
 									border: 2px solid $borderColor;
-									@include transition($property: border,$duration: 2s,$delay: .6s);
+									@include transition($property: border,$duration: 2s,$delay: .5s);
 									.smallCircle{
 										& > div{
 											border: 2px solid $borderColor;
@@ -510,9 +510,8 @@ body,
 												& > div{
 													& > div{
 														background-color: $borderColor;
-														@include transition($property: background-color,$duration: 4s,$delay: 2s);
+														@include transition($duration: 4s,$delay: 2s);
 													}
-
 												}
 											}
 										}
